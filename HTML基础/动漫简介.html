@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta author="233" ,content="233">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            background: rgba(156, 152, 152,0.5);
+        }
+
+
+        #quyu {
+            /* border: 1px solid; */
+            width: 900px;
+            /* height: 900px; */
+            margin: 0 auto;
+            background-color: rgb(46, 44, 47);
+            background-image: url(images/14.jpg);
+
+        }
+
+        #quyu #toubu {
+            width: 770px;
+            height: 70px;
+            /* border: 1px solid; */
+            color: rgb(46, 44, 47);
+            margin: 10px;
+            line-height: 60px;
+            text-align: left;
+        }
+
+        #quyu #daohang {
+            width: 770px;
+            height: 50px;
+            /* border: 1px solid; */
+            color: rgb(46, 44, 47);
+            margin: 10px;
+            line-height: 60px;
+            text-align: left;
+        }
+
+        /* #daohang h3 a {
+            color: white;
+            text-align: left;
+        } */
+
+        #quyu #neirong {
+            width: 800px;
+            height: 400px;
+            /* border: 1px solid; */
+            color: rgb(46, 44, 47);
+            margin: 10px;
+
+        }
+
+        #quyu #neirong #left {
+            width: 290px;
+            height: 370px;
+            /* border: 1px solid; */
+            color: rgb(46, 44, 47);
+            margin: 1px;
+            float: left;
+            line-height: 370px;
+        }
+
+        #quyu #neirong #right {
+            width: 500px;
+            height: 370px;
+            /* border: 1px solid; */
+            color: rgb(46, 44, 47);
+            margin: 1px;
+            float: right;
+            /* line-height: 370px; */
+            text-align: left;
+            line-height: 25px;
+            /* padding: 0.5em; */
+        }
+
+        #quyu #dibu {
+            width: 360px;
+            height: auto;
+            /* border: 1px solid; */
+            margin: 10px;
+            /* line-height: 100px; */
+            color: rgb(0, 17, 255);
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-family: 'Mirocoft yahei';
+            text-indent: 2em;
+        }
+
+        #quyu #neirong #shang {
+            width: 430px;
+            height: auto;
+            /* border: 1px solid; */
+            color: rgb(46, 44, 47);
+            margin: 20px;
+            float: inline-start;
+            text-align: left;
+        }
+
+        .co {
+            color: aquamarine;
+        }
+
+        /* a:link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        } */
+
+        /* a:visited {
+            color: rgb(255, 255, 255);
+        } */
+
+        /* a:active {
+            color: green;
+        } */
+        /* 上面三步一般省略 */
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(255, 217, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="quyu">
+        <div id="toubu">
+            <img src="images/16.png" alt="小兔兔" height="70px">
+
+        </div>
+
+        <div id="daohang">
+            <h3><a href="">首页</a> <a href="">目录</a> <a href="">每日推荐</a> <a href="">最近更新</a> <a href="">排行榜</a> <a
+                    href="">详情</a> </h3>
+
+        </div>
+
+        <div id="neirong">
+            <div id="left">
+                <img src="images/3.png" alt="秒速五厘米" width="290px">
+
+            </div>
+
+            <div id="shang">
+                <h3 class="co">秒速5厘米</h3>
+
+            </div>
+
+            <div id="right">
+                <hr>
+                <p>《秒速5厘米》是新海诚创作的一部写实动画,于2007年3月3日在日本正式上映。
+                    2007年的东京,远野贵树在从事系统工程师的工作,过着忙碌的日子。出来社会工作后，季节和季节、年和年之间的区分变得暧昧起来，不知不觉就过了数年。那年年尾,贵树和交往了3年的水野理纱分手了。2008年,贵树在春天来临前辞职了。他既觉得有无数的理由要他这样做,同时又觉得能令自己接受的理由其实一个也没有。
+                </p>
+                <p>不久空气慢慢变得暖和，樱花的季节也到访东京。在一个恬静的平日，中午过后，贵树披上薄外套,走在街上。经过铁道时,与迎面而来的女子擦肩而过的瞬间，猛然想起了多年未见的明里。在通过铁道缓缓转过身，两人目光交错，就在心与记忆即将沸腾的瞬间，却被疾驰而过的小田急线列车挡住了视线。而在电车通过时贵树就已在心中下了决定，待电车通过后发现女子早已离去时微微一笑转过身去。
+                </p>
+                <hr>
+
+            </div>
+
+        </div>
+
+        <div id="dibu">
+            <table>
+                <thead>
+                    <tr>
+                        <th>基本信息</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>地区：</td>
+                        <td>日本</td>
+                    </tr>
+                    <tr>
+                        <td>动画种类：</td>
+                        <td>剧场版</td>
+                    </tr>
+                    <tr>
+                        <td>原版名称：</td>
+                        <td>秒速5センチメートル</td>
+                    </tr>
+                    <tr>
+                        <td>其他名称：</td>
+                        <td>秒速五厘米</td>
+                    </tr>
+                    <tr>
+                        <td> 原作：</td>
+                        <td>新海诚</td>
+                    </tr>
+                    <tr>
+                        <td>制作公司：</td>
+                        <td>CoMix Wave Films</td>
+                    </tr>
+                    <tr>
+                        <td>首播时间：</td>
+                        <td>2007-03-03</td>
+                    </tr>
+                    <tr>
+                        <td>播放状态：</td>
+                        <td>完结</td>
+                    </tr>
+                    <tr>
+                        <td>剧情类型：</td>
+                        <td>爱情 校园 治愈</td>
+                    </tr>
+                    <tr>
+                        <td>标签</td>
+                        <td>爱情 校园 治愈</td>
+                    </tr>
+                    <tr>
+                        <td>官方网站：</td>
+                        <td> http://www2.odn.ne.jp/~ccs50140/</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

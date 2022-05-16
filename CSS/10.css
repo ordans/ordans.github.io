@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f5f5f5;
+}
+.box {
+    width: 298px;
+    height: 385px;
+    background-color: #fff;
+    margin: 100px auto;
+}
+.box img {
+    width: 100%;
+}
+.review {
+    height: 70px;
+    font-size: 14px;
+    padding: 0 28px;
+    margin-top: 30px;
+}
+.appraise {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 28px;
+}
+.info {
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 0 28px;
+}
+.info h4 {
+    display: inline-block;
+    font-weight: 400;
+}
+.info span {
+    color: #ff6700;
+}
+.info em {
+    font-style: normal;
+    color: #b0b0b0;
+    margin: 0 6px 0 15px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}

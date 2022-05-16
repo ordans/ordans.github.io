@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滚动渐变导航栏</title>
+    <link rel="stylesheet" href="../CSS/19.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">碧蓝档案</a>
+        <ul>
+            <li><a href="#1">日步美</a></li>
+            <li><a href="#2">亚琉</a></li>
+            <li><a href="#3">白子</a></li>
+            <li><a href="#4">锌</a></li>
+            <li><a href="#5">初音未来</a></li>
+            <li><a href="#6">花子</a></li>
+        </ul>
+    </header>
+    <section class="banner1" id="1"></section>
+    <section class="banner2" id="2"></section>
+    <section class="banner3" id="3"></section>
+    <section class="banner4" id="4"></section>
+    <section class="banner5" id="5"></section>
+    <section class="banner6" id="6"></section>
+
+    <script>
+        window.addEventListener("scroll", () => {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

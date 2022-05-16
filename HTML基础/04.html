@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单练习</title>
+    <style>
+        .bg {
+            background-color: rgb(245, 245, 245);
+            background-image: url('images/13.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            width: 1366px;
+            height: 736px;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <form action="test.php" method="get" name="name">
+
+            <label for="name">命之座:</label> <input type="text" id="name" name="violet evergarden" value="请输入角色命之座"><br>
+     
+            <label for="pas">密码:</label> <input type="password" id="pas" name="psw" maxlength="6"><br>
+     
+            性别: <label for="n">男</label><input type="radio" id="n" name="sex" value="男"><label for="v">女</label><input type="radio" name="sex" id="v" value="女" checked><br>
+     
+            爱好:和史莱姆玩耍<input type="checkbox" value="吃饭">睡觉<input type="checkbox" value="睡觉">加班<input type="checkbox" value="打豆豆"><br>
+            所属地区: 蒙德<input type="radio" name="lans">璃月<input type="radio" name="lans">稻妻<input type="radio" name="lans"><br>
+     
+            我是椰羊<input type="radio" checked><br>
+     
+            喜欢的角色:<select >
+                <option>七七</option>
+                <option>可莉</option>
+                <option>早柚</option>
+                <option>迪奥娜</option>
+            </select ><br>
+     
+            你的愿望: <textarea >我希望...
+     
+            </textarea><br>
+            
+            上传头像 <input type="file"><br>
+     
+             <input type="submit" value="开始游戏">
+     
+             <input type="reset" value="写错了">
+     
+             <input type="button" value="不用点我">
+     
+             
+     </form>
+
+    </div>
+    
+
+
+    
+
+
+
+</body>
+</html>
