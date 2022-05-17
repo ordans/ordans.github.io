@@ -6,10 +6,10 @@
     color: #000;
     font-weight: normal;
 }
-/* html{
-    /* 自定义鼠标样式 */
-    /* cursor: url("/img/指针.png"),pointer; */
-/* } */ 
+html{
+    /* 自定义鼠标样式  */
+    cursor: url("/img/指针.png"),pointer;
+} 
 
 .buttom{
     width: 1000px;
