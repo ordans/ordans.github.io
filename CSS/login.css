@@ -11,37 +11,7 @@ html{
     cursor: url("/img/指针.png"),pointer;
 } 
 
-.buttom{
-    width: 1000px;
-    height: 500px;
-    
-    border:10%;
 
-    
-    position: absolute;
-    left: 10%;
-    top: 40%;
-    
-    border-radius: 15px;
-    text-align: center;
-    
-}
-h1,h2{
-    font-family: "宋体";
-    color: aliceblue;
-}
-h1{
-    
-    font-size: 26px;
-}
-h2{
-    
-    font-size: 18px;
-}
-
-.anniu{
-    background:linear-gradient(to right red,pink,blue); 
-}
 /* 按钮样式 */
 .anniu button{
     width: 120px;
