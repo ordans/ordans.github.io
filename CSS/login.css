@@ -1,0 +1,132 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+}
+/* html{
+    /* 自定义鼠标样式 */
+    /* cursor: url("/img/指针.png"),pointer; */
+/* } */ 
+
+.buttom{
+    width: 1000px;
+    height: 500px;
+    
+    border:10%;
+
+    
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    
+    border-radius: 15px;
+    text-align: center;
+    
+}
+h1,h2{
+    font-family: "宋体";
+    color: aliceblue;
+}
+h1{
+    
+    font-size: 26px;
+}
+h2{
+    
+    font-size: 18px;
+}
+
+/* .anniu{
+    background:linear-gradient(to right red,pink,blue); 
+} */
+/* 按钮样式 */
+.anniu button{
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #FFFFFF;
+    background:linear-gradient(45deg, #169deb, #be171fd0);
+
+
+    margin:78px 137px 90px 133px ;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+#sp{
+    position: fixed;
+    z-index: -1;
+}
+/* 解决页面缩放视频不会缩放的问题 */
+@media(min-aspect-ratio:16/9){
+    #sp{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    #sp{
+        width: auto;
+        height: 100%;
+    }
+}
+
+a {
+    /* 相对定位 */
+    position: relative;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-size: 25px;
+    color: #fff;
+    /* 渐变背景 */
+    background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 圆角 */
+    border-radius: 25px;
+    z-index: 1;
+}
+
+/* 发光效果 */
+a::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 圆角 */
+    border-radius: 50px;
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    filter: blur(20px);
+
+}
+
+/* 鼠标移入执行动画 */
+a:hover {
+/* 动画: 名称 时间 infinte是无限次播放 */
+animation: streamer 8s infinite;
+}
+
+a:hover::before {
+    animation: streamer 8s infinite;
+}
+
+/* 定义动画 */
+@keyframes streamer {
+    100%{
+        background-position: -400% 0;
+    }
+}
